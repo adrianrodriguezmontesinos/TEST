@@ -1,0 +1,458 @@
+{
+  "common": {
+  "error": {
+    "server": {
+      "title": "Error del servidor",
+      "message": "Estamos teniendo problemas para cargar la información en este momento. Por favor, intenta nuevamente más tarde."
+    },
+    "noData": {
+      "title": "Sin datos del servidor",
+      "message": "Los datos recuperados del servidor están vacíos. Por favor, intenta nuevamente más tarde."
+    },
+    "required": {
+      "title": "Formulario incompleto",
+      "message": "Por favor, completa correctamente todos los valores requeridos. Los notarás por los asteriscos rojos junto a sus etiquetas."
+    }
+  },
+  "options": {
+    "yes": "Sí",
+    "no": "No",
+    "other": "Otro",
+    "unknown": "Desconocido"
+  },
+  "button": {
+    "next": "Siguiente",
+    "prev": "Anterior",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "yes": "Sí",
+    "no": "No"
+  }
+},
+"home": {
+  "title": "Flujos de trabajo",
+  "table": {
+    "empty": "No hay flujos de trabajo",
+    "options": {
+      "all": "Todos los flujos",
+      "mines": "Mis flujos",
+      "others": "Otros flujos"
+    },
+    "headers": {
+      "item": "Elemento",
+      "flow": "Flujo",
+      "status": "Estado",
+      "dueDate": "Fecha límite"
+    }
+  },
+  "errors": {
+    "service": {
+      "noUserDetail": {
+        "title": "Datos del perfil de usuario no encontrados",
+        "message": "No se han encontrado los datos del perfil de usuario."
+      },
+      "cannotLoadProfile": {
+        "title": "Perfil no encontrado",
+        "message": "No se pudieron cargar los datos del perfil de usuario."
+      },
+      "cannotLoadRelAccounts": {
+        "title": "Cuentas relacionadas del usuario no encontradas",
+        "message": "No se pudieron cargar las cuentas relacionadas del perfil de usuario."
+      }
+    }
+  }
+},
+"starter": {
+  "title1": "Nueva Transacción",
+  "title2": "Inicio",
+  "user": {
+    "title": "Usuario",
+    "orgAndUser": {
+      "title": "Datos de la Organización",
+      "fields": {
+        "organization": "Organización",
+        "userType": "Tipo de Usuario"
+      }
+    },
+    "employee": {
+      "titles": {
+        "manager": "Datos del Empleado",
+        "payroll": "Datos de Nómina"
+      },
+      "fields": {
+        "manager": "Gerente",
+        "payrollCompany": "Empresa de Nómina",
+        "payrollSystem": "Sistema de Nómina",
+        "payrollID": "ID de Nómina"
+      },
+      "info": {
+        "manager": "Correo electrónico del empleado que será el gerente de la cuenta a crear.",
+        "payrollCompany": "La empresa que actualmente emplea a esta persona desde el punto de vista de RRHH/Nómina: la empresa con autoridad para pagar.",
+        "payrollSystem": "La aplicación de RRHH utilizada para registrar a la persona dentro de la empresa de nómina.",
+        "payrollID": "La aplicación de RRHH utilizada para registrar a la persona dentro de la empresa de nómina."
+      }
+    },
+    "contractor": {
+      "title": "Datos del Contratista",
+      "fields": {
+        "endOfMission": "Fin de la Misión (MM/DD/AAAA)",
+        "responsible": "Responsable",
+        "provider": "Proveedor",
+        "belongToAdmiralGroup": "¿Pertenece al Grupo Admiral?",
+        "contractRef": "Referencia del Contrato",
+        "createAdminAccount": "¿Crear Cuenta Administrativa?"
+      },
+      "info": {
+        "endOfMission": "Día en que termina el trabajo del contratista para la empresa.",
+        "responsible": "Correo del responsable dentro de la empresa.",
+        "provider": "Proveedor al que pertenece el nuevo contratista.",
+        "belongToAdmiralGroup": "Proveedor al que pertenece el nuevo contratista.",
+        "createAdminAccount": "Crear una cuenta administrativa para el contratista cuando finalice el inicio."
+      },
+      "workstation": {
+        "title": "Datos del Puesto de Trabajo",
+        "fields": {
+          "workstationType": "Tipo de Puesto de Trabajo",
+          "vdiProfile": "Perfil VDI",
+          "firstVdiProfile": "¿Es este el primer VDI para el perfil del empleado?",
+          "vdiAdditionalSoftware": "¿Necesitas software adicional o visibilidad en la red?",
+          "vdiSoftwareRequested": "Describe el software adicional, visibilidad de red u otros requisitos que necesites"
+        },
+        "info": {
+          "workstationType": "Completa esta sección para terminar los datos del puesto de trabajo.",
+          "vdiProfile": "Perfil necesario para el VDI del nuevo usuario",
+          "firstVdiProfile": "Selecciona si es el primer VDI creado o ya existe otro usuario con este perfil",
+          "vdiAdditionalSoftware": "Indica si necesita software adicional o visibilidad en red",
+          "vdiSoftwareRequested": "Puedes completar este campo con el software que necesita el usuario o cualquier otro requerimiento"
+        }
+      }
+    },
+    "administrator": {
+      "title": "Datos del Administrador",
+      "fields": {
+        "employeeLinked": "Empleado vinculado a la cuenta de administrador"
+      },
+      "info": {
+        "employeeLinked": "Correo electrónico del empleado vinculado a la cuenta de administrador"
+      }
+    },
+    "addAccount": {
+      "title": "Datos de Cuenta Adicional",
+      "fields": {
+        "mainAccount": "Cuenta Principal",
+        "additionalAccountEmailInbox": "Bandeja de Entrada"
+      },
+      "info": {
+        "mainAccount": "Correo de la cuenta principal vinculada a la adicional",
+        "additionalAccountEmailInbox": "Solicita la creación de una bandeja de entrada para la cuenta adicional"
+      }
+    },
+    "serviceAccount": {
+      "title": "Datos de Cuenta de Servicio",
+      "fields": {
+        "owner": "Propietario",
+        "backupOwner": "Propietario de Respaldo",
+        "instance": "Instancia",
+        "department": "Departamento",
+        "endOfMission": "Fin de la Misión (MM/DD/AAAA)",
+        "endOfMissionDisplay": "Fin de la Misión",
+        "description": "Descripción Técnica"
+      },
+      "info": {
+        "owner": "Correo del empleado que será propietario de la cuenta de servicio",
+        "backupOwner": "Correo del empleado que será propietario de respaldo",
+        "instance": "Nombre de la instancia de la cuenta de servicio",
+        "department": "Departamento donde se usará la cuenta. Máximo 64 caracteres.",
+        "endOfMission": "Fecha en que termina el trabajo de la cuenta de servicio",
+        "description": "Descripción técnica de la cuenta. Máximo 256 caracteres."
+      },
+      "instance": {
+        "name": "Nombre de la Instancia",
+        "description": "Descripción de la Instancia"
+      }
+    },
+    "contact": {
+      "title": "Información de Contacto",
+      "fields": {
+        "name": "Nombre",
+        "lastName": "Apellido",
+        "userName": "Nombre de Usuario",
+        "email": "Correo Electrónico",
+        "emailContact": "Correo de Contacto",
+        "gsuiteConfig": "Configuración Gsuite",
+        "gmailUserGroup": "Grupo de Usuarios Gmail",
+        "additionalInfo": "Información Adicional"
+      },
+      "info": {
+        "name": "Máx. 28 caracteres.",
+        "lastName": "Máx. 29 caracteres.",
+        "userName": "Regla: nombre.apellido, máx. 20 caracteres. No puede contener: a.a, a.e, e.a, e.e",
+        "email": "Regla: nombre.apellido, máx. 256 caracteres.",
+        "gmailUserGroup": "Grupos de Gmail a los que pertenecerá el usuario.",
+        "emailContact": "Correo de contacto donde se enviarán las credenciales de OneLogin. Máx. 256 caracteres.",
+        "additionalInfo": "Campo para información adicional sobre el usuario. Se incluirá en el ticket de FreshDesk."
+      }
+    },
+    "ct": {
+      "title": "Datos del Agente",
+      "agentCode": "Código del Agente",
+      "agentCodeInfo": "Este campo almacenará el código del agente. Máx. 20 caracteres."
+    }
+  },"roles": {
+  "title": "Roles",
+  "table": {
+    "headers": {
+      "organization": "Organización",
+      "roleCode": "Código",
+      "approver": "Aprobador",
+      "addlApprover": "Aprobador Suplente",
+      "roleDesc": "Descripción",
+      "roleJust": "Justificación de la Solicitud",
+      "expDate": "Fecha de Expiración"
+    },
+    "noRoles": "No se ha seleccionado ningún rol"
+  },
+  "form": {
+    "title": "Agregar Roles",
+    "fields": {
+      "approver": {
+        "name": "Aprobador",
+        "placeholder": "Seleccionar Aprobador"
+      },
+      "additionalApprover": {
+        "name": "Aprobador Suplente",
+        "placeholder": "Seleccionar Aprobador Suplente"
+      },
+      "justification": {
+        "name": "Justificación",
+        "placeholder": "Justifica esta asignación de rol (mínimo 10 caracteres)"
+      },
+      "roleExpirationDate": {
+        "name": "Fecha de Expiración del Rol",
+        "placeholder": "MM/DD/AAAA (mínimo hoy)"
+      }
+    }
+  },
+  "filter": {
+    "code": "Filtrar por código",
+    "organization": "Filtrar por organización",
+    "allOrgs": "Roles de todas las organizaciones"
+  },
+  "options": {
+    "add": "Agregar Roles",
+    "del": "Eliminar Rol"
+  },
+  "messages": {
+    "confirm": "¿Estás seguro de que deseas eliminar este rol?",
+    "delRole": "Rol eliminado exitosamente."
+  }
+},
+"summary": {
+  "title": "Confirmación",
+  "schedule": "Programar Transacción",
+  "fields": {
+    "scheduleTransaction": "Programar Transacción",
+    "scheduleDate": "Fecha Programada (MM/DD/AAAA)"
+  },
+  "list": {
+    "item1": "En esta sección puedes especificar si deseas programar la creación del usuario para el futuro o generarla inmediatamente.",
+    "item2": "La programación debe ser siempre para una fecha futura.",
+    "item3": "Si ya existe una transacción de inicio programada para este usuario, el sistema mostrará un error e invalidará este formulario."
+  },
+  "info": {
+    "scheduleTransaction": "¿Deseas programar esta transacción para una fecha futura?",
+    "scheduleDate": "Fecha en la que se ejecutará la transacción de salida. Fecha mínima: hoy."
+  }
+},"info": {
+  "main": "Este formulario permite realizar una solicitud de alta para registrar un nuevo usuario en la empresa. También podrás realizar solicitudes de asignación de roles, que serán enviadas a sus aprobadores para decidir si son viables o no. Debes tener claro qué roles estás intentando asignar a ese nuevo usuario.",
+  "title": "Nuevos usuarios, expande el panel para más instrucciones",
+  "user": {
+    "item1": "En esta sección debes completar todos los datos relacionados con el nuevo usuario.",
+    "item2": "Encontrarás explicaciones en los campos menos comunes, en el ícono de información junto a sus etiquetas, junto con validaciones.",
+    "item3": "En este formulario puedes generar 3 tipos de empleados (empleado, contratista o administrador) y aparecerán campos adicionales según el tipo. Solo los usuarios con privilegios especiales pueden crear administradores (contacta al soporte para más información).",
+    "item4": "Hay utilidades en este formulario para asegurar que los datos del nuevo usuario sean correctos y que no haya duplicados (usuario, correo electrónico).",
+    "item5": "Por favor completa todos los valores requeridos (asterisco rojo) antes de hacer clic en el botón \"Siguiente paso\"."
+  },
+  "roles": {
+    "item1": "En esta sección puedes indicar todos los roles que deseas asignar al usuario (recuerda que solo puedes asignar roles de tu organización).",
+    "item2": "Para agregar un rol, añade una fila en la tabla, selecciona el código del rol y luego su aprobador.",
+    "item3": "Si cambias el rol después de seleccionar un aprobador, asegúrate de volver a seleccionar un valor válido en el campo Aprobador.",
+    "item4": "Para eliminar un rol incorrecto, presiona el ícono de papel al final de la fila, o selecciona varios registros y presiona \"Eliminar\".",
+    "item5": "El sistema realizará validaciones adicionales al enviar el formulario, asegúrate de no incluir roles duplicados ni datos erróneos."
+  },
+  "summary": {
+    "item1": "Cuando se envíe este formulario (haciendo clic en \"Enviar\" en la esquina inferior derecha), el sistema creará automáticamente el usuario, incluso si los roles asignados aún no han sido aprobados.",
+    "item2": "Las credenciales de activación de la cuenta del nuevo usuario se enviarán al correo indicado en \"Correo de contacto\".",
+    "item3": "Además, se enviará un formulario de aprobación a los responsables de los roles asignados para que puedan aprobar o rechazar la asignación.",
+    "item4": "Recibirás una notificación en este formulario indicando si el proceso fue exitoso o si ocurrió un error. También recibirás un correo con esta información.",
+    "item5": "Ten en cuenta que el enlace de invitación de OneLogin para restablecer la contraseña expira en 24 horas."
+  },
+  "moreInfo": {
+    "message": "Si necesitas más información, puedes consultar la guía disponible en el siguiente enlace:",
+    "link": "guía de inicio"
+  }
+},
+"errors": {
+  "validations": {
+    "nameLength": {
+      "title": "El nombre excede la longitud máxima",
+      "message": "El campo Nombre no puede exceder los 28 caracteres."
+    },
+    "lastnameLength": {
+      "title": "El apellido excede la longitud máxima",
+      "message": "El campo Apellido no puede exceder los 29 caracteres."
+    },
+    "usernameLength": {
+      "title": "El nombre de usuario excede la longitud máxima",
+      "message": "El campo Nombre de Usuario no puede exceder los 20 caracteres."
+    },
+    "emailLength": {
+      "title": "El correo electrónico excede la longitud máxima",
+      "message": "El campo Correo electrónico no puede exceder los 256 caracteres."
+    },
+    "emailContactLength": {
+      "title": "El correo de contacto excede la longitud máxima",
+      "message": "El campo Correo de Contacto no puede exceder los 256 caracteres."
+    },
+    "agentCodeLength": {
+      "title": "El código de agente excede la longitud máxima",
+      "message": "El campo Código de Agente no puede exceder los 20 caracteres."
+    },
+    "techDescriptionLength": {
+      "title": "La descripción técnica excede la longitud máxima",
+      "message": "El campo Descripción Técnica no puede exceder los 256 caracteres."
+    },
+    "department": {
+      "title": "El departamento excede la longitud máxima",
+      "message": "El campo Departamento no puede exceder los 64 caracteres."
+    },
+    "username": {
+      "title": "Nombre de usuario inválido",
+      "message": "El campo Nombre de Usuario no puede contener: a.a, a.e, e.a, e.e, ni signos diacríticos."
+    },
+    "email": {
+      "title": "Correo electrónico inválido",
+      "message": "El campo Correo electrónico no puede contener signos diacríticos."
+    },
+    "emailContact": {
+      "title": "Correo de contacto inválido",
+      "message": "El campo Correo de Contacto no es un correo válido."
+    }
+  },
+  "service": {
+    "noManagers": {
+      "title": "No se encontraron gerentes.",
+      "message": "No pudimos recuperar la lista de gerentes."
+    },
+    "noMainAccounts": {
+      "title": "No se encontraron cuentas principales.",
+      "message": "No pudimos recuperar la lista de cuentas principales."
+    },
+    "noOwners": {
+      "title": "No se encontraron propietarios.",
+      "message": "No pudimos recuperar la lista de propietarios."
+    },
+    "noResponsibles": {
+      "title": "No se encontraron responsables.",
+      "message": "No pudimos recuperar la lista de responsables."
+    },
+    "noEmployeesLinked": {
+      "title": "No se encontraron empleados vinculados.",
+      "message": "No pudimos recuperar la lista de empleados vinculados."
+    },
+    "noOrgs": {
+      "title": "No se encontraron organizaciones.",
+      "message": "No pudimos recuperar la lista de organizaciones."
+    },
+    "noInstances": {
+      "title": "No se encontraron instancias.",
+      "message": "No pudimos recuperar la lista de instancias."
+    }
+  },
+  "contact": {
+    "title": "Datos de contacto inválidos",
+    "fullName": "El nombre completo",
+    "userName": "El nombre de usuario",
+    "email": "El correo electrónico",
+    "alreadyExists": "ya existe."
+  },
+  "roles": {
+    "noApprovers": {
+      "title": "Roles sin aprobadores",
+      "message": "Algunos roles seleccionados no tienen lista de aprobadores. No puedes agregarlos."
+    },
+    "noRoles": {
+      "title": "No se agregaron roles",
+      "message": "Para continuar, debes agregar al menos un rol a la lista."
+    },
+    "selectFirst": {
+      "title": "¡No hay roles seleccionados!",
+      "message": "Debes seleccionar al menos un rol para agregar."
+    },
+    "justification": "Por favor completa todos los valores requeridos (asteriscos rojos). Cada justificación debe tener al menos 10 caracteres. Las fechas de expiración no pueden ser anteriores a hoy."
+  },
+  "summary": {
+    "sendTransaction": {
+      "title": "Transacción fallida",
+      "message": "No se pudo enviar la transacción de inicio. Por favor, inténtalo más tarde."
+    }
+  }
+},
+"success": {
+  "send": {
+    "title": "Inicio enviado",
+    "message": "¡La transacción de inicio se ha enviado exitosamente!"
+  }
+}
+}, "update": "",
+"leaver": "",
+"signIn": {
+  "welcome": "Bienvenido a",
+  "button": "Iniciar sesión con SSO",
+  "alerts": {
+    "logOutInfo": "Usuario desconectado exitosamente",
+    "authError": {
+      "title": "Error de autenticación",
+      "message": "Lo sentimos, las credenciales han expirado. Por favor, inicia sesión nuevamente."
+    },
+    "authCallbackError": {
+      "title": "Error de autenticación",
+      "message": "Lo sentimos, hubo un problema inesperado durante el proceso de inicio de sesión. Inténtalo más tarde."
+    }
+  }
+},
+"menu": {
+  "tasks": "Flujos de trabajo",
+  "new": "Nueva Transacción",
+  "starter": "Inicio",
+  "profile": {
+    "profileInfo": "Información del Perfil",
+    "relatedAccounts": "Cuentas Relacionadas",
+    "profileAlt": "Imagen de perfil",
+    "loginInfo": {
+      "title": "Información de Inicio de Sesión",
+      "lastLogin": "Último Inicio de Sesión",
+      "passwordChangedAt": "Contraseña Cambiada En",
+      "status": "Estado",
+      "state": "Condición"
+    },
+    "table": {
+      "titles": {
+        "adminAccounts": "Cuentas de Administrador",
+        "contractorAccounts": "Cuentas de Contratista",
+        "relatedAccounts": "Cuentas Relacionadas",
+        "additionalAccounts": "Cuentas Adicionales"
+      },
+      "headers": {
+        "name": "Nombre Completo",
+        "username": "Nombre de Usuario",
+        "email": "Correo Electrónico",
+        "emailContact": "Correo de Contacto",
+        "roleIds": "IDs de Rol"
+      }
+    }
+  }
+}
+
+}
