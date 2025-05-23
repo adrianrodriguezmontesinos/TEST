@@ -1,0 +1,354 @@
+{
+  "common": {
+  "error": {
+    "server": {
+      "title": "Errore del server",
+      "message": "Stiamo riscontrando problemi nel caricare le informazioni. Per favore, riprova più tardi."
+    },
+    "noData": {
+      "title": "Nessun dato dal server",
+      "message": "I dati recuperati dai server sono vuoti. Per favore, riprova più tardi."
+    },
+    "required": {
+      "title": "Modulo incompleto",
+      "message": "Per favore, compila correttamente tutti i campi obbligatori. Li riconoscerai dagli asterischi rossi accanto alle etichette."
+    }
+  },
+  "options": {
+    "yes": "Sì",
+    "no": "No",
+    "other": "Altro",
+    "unknown": "Sconosciuto"
+  },
+  "button": {
+    "next": "Avanti",
+    "prev": "Precedente",
+    "submit": "Invia",
+    "cancel": "Annulla",
+    "confirm": "Conferma",
+    "yes": "Sì",
+    "no": "No"
+  }
+},
+"home": {
+  "title": "Flussi di lavoro",
+  "table": {
+    "empty": "Non ci sono flussi di lavoro",
+    "options": {
+      "all": "Tutti i flussi di lavoro",
+      "mines": "I miei flussi di lavoro",
+      "others": "Altri flussi di lavoro"
+    },
+    "headers": {
+      "item": "Elemento",
+      "flow": "Flusso",
+      "status": "Stato",
+      "dueDate": "Data di scadenza"
+    }
+  },
+  "errors": {
+    "service": {
+      "noUserDetail": {
+        "title": "Dati del profilo utente non trovati",
+        "message": "I dati del tuo profilo utente non sono stati trovati."
+      },
+      "cannotLoadProfile": {
+        "title": "Profilo non trovato",
+        "message": "I dati del tuo profilo utente non possono essere caricati."
+      },
+      "cannotLoadRelAccounts": {
+        "title": "Account collegati all'utente non trovati",
+        "message": "Gli account collegati al tuo profilo utente non possono essere caricati."
+      }
+    }
+  }
+},
+  "starter": {
+    "title1": "Nuova Transazione",
+    "title2": "Inizio",
+    "user": {
+      "title": "Utente",
+      "orgAndUser": {
+        "title": "Dati dell'Organizzazione",
+        "fields": {
+          "organization": "Organizzazione",
+          "userType": "Tipo di Utente"
+        }
+      },
+      "employee": {
+        "titles": {
+          "manager": "Dati del Dipendente",
+          "payroll": "Dati di Pagamento"
+        },
+        "fields": {
+          "manager": "Responsabile",
+          "payrollCompany": "Azienda Pagante",
+          "payrollSystem": "Sistema Paghe",
+          "payrollID": "ID Paghe"
+        },
+        "info": {
+          "manager": "Email del dipendente che sarà il responsabile dell'account da creare.",
+          "payrollCompany": "L’azienda che attualmente impiega questa persona dal punto di vista HR/Paghe: l’azienda con autorità di pagamento.",
+          "payrollSystem": "L’applicazione HR utilizzata per registrare la persona presso l’azienda pagante.",
+          "payrollID": "L’applicazione HR utilizzata per registrare la persona presso l’azienda pagante."
+        }
+      }
+    },
+    "roles": {
+      "title": "Ruoli",
+      "table": {
+        "headers": {
+          "organization": "Organizzazione",
+          "roleCode": "Codice",
+          "approver": "Approvante",
+          "addlApprover": "Approvante di Riserva",
+          "roleDesc": "Descrizione",
+          "roleJust": "Giustificazione della Richiesta",
+          "expDate": "Data di Scadenza"
+        },
+        "noRoles": "Nessun ruolo è stato selezionato"
+      },
+      "form": {
+        "title": "Aggiungi Ruoli",
+        "fields": {
+          "approver": {
+            "name": "Approvante",
+            "placeholder": "Seleziona Approvante"
+          },
+          "additionalApprover": {
+            "name": "Approvante di Riserva",
+            "placeholder": "Seleziona Approvante di Riserva"
+          },
+          "justification": {
+            "name": "Giustificazione",
+            "placeholder": "Giustifica questa assegnazione di ruolo (min. 10 caratteri)"
+          },
+          "roleExpirationDate": {
+            "name": "Data di Scadenza del Ruolo",
+            "placeholder": "GG/MM/AAAA (al minimo oggi)"
+          }
+        }
+      },
+      "filter": {
+        "code": "Filtra per codice",
+        "organization": "Filtra per organizzazione",
+        "allOrgs": "Ruoli di tutte le organizzazioni"
+      },
+      "options": {
+        "add": "Aggiungi Ruoli",
+        "del": "Elimina Ruolo"
+      },
+      "messages": {
+        "confirm": "Sei sicuro di voler eliminare questo ruolo?",
+        "delRole": "Ruolo eliminato con successo."
+      }
+    },
+    "summary": {
+      "title": "Conferma",
+      "schedule": "Programma Transazione",
+      "fields": {
+        "scheduleTransaction": "Programma Transazione",
+        "scheduleDate": "Data di Programmazione (GG/MM/AAAA)"
+      },
+      "list": {
+        "item1": "In questa sezione puoi specificare se desideri programmare la creazione dell'utente o farlo immediatamente.",
+        "item2": "La data di programmazione deve essere sempre una data futura.",
+        "item3": "Se è già stata programmata una transazione di inserimento per questo utente, il sistema genererà un errore e invaliderà il modulo."
+      },
+      "info": {
+        "scheduleTransaction": "Vuoi programmare questa transazione per una data futura?",
+        "scheduleDate": "Data in cui verrà eseguita la transazione di uscita. Data minima: oggi."
+      }
+    },
+    "info": {
+      "main": "Questo modulo consente di inviare una richiesta di inserimento per registrare un nuovo utente in azienda. Attraverso questo modulo, è anche possibile richiedere l'assegnazione di ruoli, che verranno inviati ai rispettivi approvatori per valutare la validità dell'assegnazione. È quindi importante essere consapevoli dei ruoli che si desidera assegnare al nuovo utente.",
+      "title": "Principianti, espandi il pannello per ulteriori istruzioni",
+      "user": {
+        "item1": "In questa sezione devi compilare tutti i dati relativi al nuovo utente.",
+        "item2": "Troverai una spiegazione nei campi meno comuni, accanto all'icona informativa, insieme ai vincoli di validazione.",
+        "item3": "In questo modulo puoi generare 3 tipi di dipendenti (dipendente, collaboratore o amministratore) e verranno visualizzati campi aggiuntivi a seconda del tipo selezionato. Solo gli utenti con privilegi speciali possono creare amministratori (contatta il supporto per maggiori informazioni).",
+        "item4": "Sono presenti strumenti per assicurarsi che i dati del nuovo utente siano corretti e non duplicati (username, email).",
+        "item5": "Si prega di completare tutti i campi obbligatori (asterisco rosso) prima di cliccare sul pulsante \"Passaggio successivo\"."
+      },
+      "roles": {
+        "item1": "In questa sezione puoi indicare tutti i ruoli da assegnare a questo utente (ricorda che puoi assegnare solo ruoli appartenenti alla tua organizzazione).",
+        "item2": "Per aggiungere nuovi ruoli, crea una nuova riga nella tabella, seleziona il codice del ruolo e l'approvatore corrispondente.",
+        "item3": "Se cambi ruolo dopo aver selezionato un approvatore, assicurati di selezionare nuovamente un approvatore valido.",
+        "item4": "Per rimuovere un ruolo aggiunto erroneamente, clicca sull'icona della carta alla fine della riga, oppure seleziona più righe e premi \"Elimina\".",
+        "item5": "Il sistema eseguirà ulteriori convalide all'invio del modulo, quindi assicurati di non includere ruoli duplicati o dati errati."
+      },
+      "summary": {
+        "item1": "Quando questo modulo viene inviato (cliccando sul pulsante \"Invia\" nell'angolo in basso a destra), il sistema creerà automaticamente l'utente, indipendentemente dall'approvazione dei ruoli assegnati.",
+        "item2": "Le credenziali per l'attivazione dell'account del nuovo utente verranno inviate all'indirizzo email specificato nel campo \"Email di contatto\".",
+        "item3": "Inoltre, verrà inviato un modulo di approvazione ai responsabili dei ruoli assegnati affinché possano approvarli o rifiutarli.",
+        "item4": "Riceverai una notifica nel modulo per indicare se il processo è andato a buon fine o se si è verificato un errore. Riceverai anche un'email con queste informazioni.",
+        "item5": "Nota: il link di invito di OneLogin per impostare la password scade dopo 24 ore."
+      },
+      "moreInfo": {
+        "message": "Se hai bisogno di ulteriori informazioni, puoi consultare la guida disponibile al seguente link:",
+        "link": "guida all'avvio"
+      }
+    },
+    "errors": {
+      "validations": {
+        "nameLength": {
+          "title": "Il nome supera la lunghezza massima",
+          "message": "Il campo Nome non può superare i 28 caratteri."
+        },
+        "lastnameLength": {
+          "title": "Il cognome supera la lunghezza massima",
+          "message": "Il campo Cognome non può superare i 29 caratteri."
+        },
+        "usernameLength": {
+          "title": "Il nome utente supera la lunghezza massima",
+          "message": "Il campo Nome utente non può superare i 20 caratteri."
+        },
+        "emailLength": {
+          "title": "L'email supera la lunghezza massima",
+          "message": "Il campo Email non può superare i 256 caratteri."
+        },
+        "emailContactLength": {
+          "title": "L'email di contatto supera la lunghezza massima",
+          "message": "Il campo Email di contatto non può superare i 256 caratteri."
+        },
+        "agentCodeLength": {
+          "title": "Il codice agente supera la lunghezza massima",
+          "message": "Il campo Codice agente non può superare i 20 caratteri."
+        },
+        "techDescriptionLength": {
+          "title": "La descrizione tecnica supera la lunghezza massima",
+          "message": "Il campo Descrizione tecnica non può superare i 256 caratteri."
+        },
+        "department": {
+          "title": "Il reparto supera la lunghezza massima",
+          "message": "Il campo Reparto non può superare i 64 caratteri."
+        },
+        "username": {
+          "title": "Nome utente non valido",
+          "message": "Il campo Nome utente non può contenere le stringhe: a.a, a.e, e.a, o e.e. Non deve contenere segni diacritici."
+        },
+        "email": {
+          "title": "Email non valida",
+          "message": "Il campo Email non può contenere segni diacritici."
+        },
+        "emailContact": {
+          "title": "Email di contatto non valida",
+          "message": "Il campo Email di contatto non è un'email valida."
+        }
+      },
+      "service": {
+        "noManagers": {
+          "title": "Nessun manager trovato.",
+          "message": "Non è stato possibile recuperare l'elenco dei manager."
+        },
+        "noMainAccounts": {
+          "title": "Nessun account principale trovato.",
+          "message": "Non è stato possibile recuperare l'elenco degli account principali."
+        },
+        "noOwners": {
+          "title": "Nessun proprietario trovato.",
+          "message": "Non è stato possibile recuperare l'elenco dei proprietari."
+        },
+        "noResponsibles": {
+          "title": "Nessun responsabile trovato.",
+          "message": "Non è stato possibile recuperare l'elenco dei responsabili."
+        },
+        "noEmployeesLinked": {
+          "title": "Nessun dipendente collegato trovato.",
+          "message": "Non è stato possibile recuperare l'elenco dei dipendenti collegati."
+        },
+        "noOrgs": {
+          "title": "Nessuna organizzazione trovata.",
+          "message": "Non è stato possibile recuperare l'elenco delle organizzazioni."
+        },
+        "noInstances": {
+          "title": "Nessuna istanza trovata.",
+          "message": "Non è stato possibile recuperare l'elenco delle istanze."
+        }
+      },
+      "contact": {
+        "title": "Dati di contatto non validi",
+        "fullName": "Il nome completo",
+        "userName": "Il nome utente",
+        "email": "L'email",
+        "alreadyExists": "esiste già."
+      },
+      "roles": {
+        "noApprovers": {
+          "title": "Ruoli senza approvatori",
+          "message": "Alcuni dei ruoli selezionati non hanno approvatori, quindi non è possibile aggiungerli."
+        },
+        "noRoles": {
+          "title": "Nessun ruolo aggiunto",
+          "message": "Per continuare, devi aggiungere almeno un ruolo alla lista."
+        },
+        "selectFirst": {
+          "title": "Nessun ruolo selezionato!",
+          "message": "Devi selezionare almeno un ruolo da aggiungere."
+        },
+        "justification": "Compila tutti i valori richiesti. Li riconoscerai grazie all'asterisco rosso accanto alle etichette. Ogni giustificazione deve avere almeno 10 caratteri. La data di scadenza del ruolo non può essere precedente a oggi."
+      },
+      "summary": {
+        "sendTransaction": {
+          "title": "Transazione fallita",
+          "message": "La transazione di avvio non è stata inviata. Riprova più tardi."
+        }
+      }
+    },
+    "success": {
+      "send": {
+        "title": "Avvio inviato",
+        "message": "La transazione di avvio è stata inviata con successo!"
+      }
+    }
+  },
+  "update": "",
+  "leaver": "",
+  "signIn": {
+    "welcome": "Benvenuto in",
+    "button": "Accedi con SSO",
+    "alerts": {
+      "logOutInfo": "Utente disconnesso con successo",
+      "authError": {
+        "title": "Errore di autenticazione",
+        "message": "Spiacenti, le credenziali sono scadute. Per favore, accedi di nuovo al sistema."
+      },
+      "authCallbackError": {
+        "title": "Errore di autenticazione",
+        "message": "Spiacenti, si è verificato un problema imprevisto durante il processo di accesso. Riprova più tardi."
+      }
+    }
+  },
+  "menu": {
+    "tasks": "Flussi di lavoro",
+    "new": "Nuova Transazione",
+    "starter": "Inizio",
+    "profile": {
+      "profileInfo": "Informazioni del Profilo",
+      "relatedAccounts": "Account Collegati",
+      "profileAlt": "Immagine del profilo",
+      "loginInfo": {
+        "title": "Informazioni di Accesso",
+        "lastLogin": "Ultimo Accesso",
+        "passwordChangedAt": "Password Modificata il",
+        "status": "Stato",
+        "state": "Condizione"
+      },
+      "table": {
+        "titles": {
+          "adminAccounts": "Account Amministratore",
+          "contractorAccounts": "Account Contraente",
+          "relatedAccounts": "Account Collegati",
+          "additionalAccounts": "Account Aggiuntivi"
+        },
+        "headers": {
+          "name": "Nome Completo",
+          "username": "Nome Utente",
+          "email": "Email",
+          "emailContact": "Email di Contatto",
+          "roleIds": "ID Ruolo"
+        }
+      }
+    }
+  }
+}
