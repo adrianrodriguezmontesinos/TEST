@@ -1,0 +1,460 @@
+{
+  "common": {
+    "error": {
+      "server": {
+        "title": "Server error",
+        "message": "We are having trouble loading the information right now. Please try again later."
+      },
+      "noData": {
+        "title": "No data from server",
+        "message": "The data retrieved from servers are empty. Please try again later."
+      },
+      "required": {
+        "title": "Uncompleted form",
+        "message": "Please fill properly all the required values. You will notice them due to the red asteriks, next to their labels."
+      }
+    },
+    "options": {
+      "yes": "Yes",
+      "no": "No",
+      "other": "Other",
+      "unknown": "Unknown"
+    },
+    "button": {
+      "next": "Next",
+      "prev": "Previous",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "home": {
+    "title": "Workflows",
+    "table": {
+      "empty": "There are no workflows",
+      "options": {
+        "all": "All Workflows",
+        "mines": "My Workflows",
+        "others": "Other Workflows"
+      },
+      "headers": {
+        "item": "Item",
+        "flow": "Flow",
+        "status": "Status",
+        "dueDate": "Due Date"
+      }
+    },
+    "errors": {
+      "service": {
+        "noUserDetail": {
+          "title": "User profile data not found",
+          "message": "Your profile user data have not been found."
+        },
+        "cannotLoadProfile": {
+          "title": "Profile not found",
+          "message": "Your user profile data could not be loaded."
+        },
+        "cannotLoadRelAccounts": {
+          "title": "User related accounts not found",
+          "message": "Your profile user related accounts could not be loaded."
+        }
+      }
+    }
+  },
+  "starter": {
+    "title1": "New Transaction",
+    "title2": "Starter",
+    "user": {
+      "title": "User",
+      "orgAndUser": {
+        "title": "Organization Data",
+        "fields": {
+          "organization": "Organization",
+          "userType": "User Type"
+        }
+      },
+      "employee": {
+        "titles": {
+          "manager": "Employee Data",
+          "payroll": "Payroll Data"
+        },
+        "fields": {
+          "manager": "Manager",
+          "payrollCompany": "Payroll company",
+          "payrollSystem": "Payroll System",
+          "payrollID": "Payroll ID"
+        },
+        "info": {
+          "manager": "Email of the employee to be the manager of the account to create.",
+          "payrollCompany": "The company currently employing this person from an HR/Payroll point of view: the company with authority to pay. (ie that person can then work for whatever Business Unit). EUIGS and AS are considered two separate company from that perspective (because they have two separate authorities even if using the same software and legal company name).",
+          "payrollSystem": "The HR application used to register the person within the Payroll Company. This is to support use cases where the Payroll Company is changing software or is having two in parallel (or even the same software but with two separate identifiers space).",
+          "payrollID": "The HR application used to register the person within the Payroll Company. This is to support use cases where the Payroll Company is changing software or is having two in parallel (or even the same software but with two separate identifiers space)."
+        }
+      },
+      "contractor": {
+        "title": "Contractor Data",
+        "fields": {
+          "endOfMission": "End of Mission (MM/DD/YYYY)",
+          "responsible": "Responsible",
+          "provider": "Provider",
+          "belongToAdmiralGroup": "Belongs to Admiral Group?",
+          "contractRef": "Contract Reference",
+          "createAdminAccount": "Create Admin Account?"
+        },
+        "info": {
+          "endOfMission": "Day when the contractor work for the company ends. This is the first future date when the contractor will no longer be working with the company and therefore requires her access suspended. By default this can no longer be more than 6 months at creation of the account.",
+          "responsible": "Email of the user Responsible inside the company. This is the login on OneLogin on the user responsible for the contract (and therefore its user account and accesses). That responsible person must be an employee",
+          "provider": "Provider to which the new contractor belongs.",
+          "belongToAdmiralGroup": "Provider to which the new contractor belongs.",
+          "createAdminAccount": "Create an admin account for the Contractor when the Starter will be finished."
+        },
+        "workstation": {
+          "title": "Workstation Data",
+          "fields": {
+            "workstationType": "Workstation type",
+            "vdiProfile": "VDI Profile",
+            "firstVdiProfile": "Is this the first VDI for the employee profile?",
+            "vdiAdditionalSoftware": "Do you need any additional software or network visibilities?",
+            "vdiSoftwareRequested": "Please, describe the possible additional software, network visibilities or any other requirement that you need"
+          },
+          "info": {
+            "workstationType": "Fill this section in order to complete the Workstation data for the Contractor.",
+            "vdiProfile": "The profile for the VDI needed for the new user",
+            "firstVdiProfile": "Select if the VDI profile is the first created or exists other user working with it",
+            "vdiAdditionalSoftware": "Select if the user needs or not additional software or any connectivity visibilities",
+            "vdiSoftwareRequested": "You can fill this field with the software that the user will need for his VDI or in case that it needs another requirement."
+          }
+        }
+      },
+      "administrator": {
+        "title": "Administrator Data",
+        "fields": {
+          "employeeLinked": "Employee linked to admin account"
+        },
+        "info": {
+          "employeeLinked": "Email of the employee user account linked to one admin account."
+        }
+      },
+      "addAccount": {
+        "title": "Additional Account Data",
+        "fields": {
+          "mainAccount": "Main Account",
+          "additionalAccountEmailInbox": "Email Inbox"
+        },
+        "info": {
+          "mainAccount": "Email of the main account linked to an Additional Account.",
+          "additionalAccountEmailInbox": "Request the creation of an Email Inbox for the Additional Account"
+        }
+      },
+      "serviceAccount": {
+        "title": "Service Account Data",
+        "fields": {
+          "owner": "Owner",
+          "backupOwner": "Backup Owner",
+          "instance": "Instance",
+          "department": "Department",
+          "endOfMission": "End of Mission (MM/DD/YYYY)",
+          "endOfMissionDisplay": "End of Mission",
+          "description": "Technical description"
+        },
+        "info": {
+          "owner": "Email of the Empoyee to be the owner of the Service account to create",
+          "backupOwner": "Email of the Empoyee to be the backup owner of the Service account to create",
+          "instance": "The name of the instance for the Service account to create",
+          "department": "The department where the Service Account will be used. Max 64 characters.",
+          "endOfMission": "Day when the Service Account work ends",
+          "description": "The technical aspects description for the Service account. Max 256 characters."
+        },
+        "instance": {
+          "name": "Instance name",
+          "description": "Instance description"
+        }
+      },
+      "contact": {
+        "title": "Conatct Info",
+        "fields": {
+          "name": "Name",
+          "lastName": "Last Name",
+          "userName": "Username",
+          "email": "Email",
+          "emailContact": "Email Contact",
+          "gsuiteConfig": "Gsuite config",
+          "gmailUserGroup": "Gmail user group",
+          "additionalInfo": "Additional Info"
+        },
+        "info": {
+          "name": "Max 28 characters.",
+          "lastName": "Max 29 characters.",
+          "userName": "Naming rule: name.lastname, max 20 characters. Can not contain the following strings: a.a, a.e, e.a, or e.e",
+          "email": "Naming rule: name.lastname, max 256 characters.",
+          "gmailUserGroup": "Gmail groups that the user will belong to.",
+          "emailContact": "Contact email to which the new OneLogin credentials will be sent for a new user, OneLogin will require a reset password at the time of first login using the link. It can be a personal email or an email from the person responsible for the new user. Max 256 characters.",
+          "additionalInfo": "Text field for providing some additional information concerning the user signing up. This information will be included in the arrival ticket created in the FreshDesk ticketing system."
+        }
+      },
+      "ct": {
+        "title": "Agent Data",
+        "agentCode": "Agent Code",
+        "agentCodeInfo": "This field will store the agent code. It can be filled or updated later using the UpdateUser form. Max 20 characters."
+      }
+    },
+    "roles": {
+      "title": "Roles",
+      "table": {
+        "headers": {
+          "organization": "Organization",
+          "roleCode": "Code",
+          "approver": "Approver",
+          "addlApprover": "Backup Approver",
+          "roleDesc": "Description",
+          "roleJust": "Request Justification",
+          "expDate": "Expiration Date"
+        },
+        "noRoles": "None of the roles has been selected"
+      },
+      "form": {
+        "title": "Add Roles",
+        "fields": {
+          "approver": {
+            "name": "Approver",
+            "placeholder": "Select Approver"
+          },
+          "additionalApprover": {
+            "name": "Backup Approver",
+            "placeholder": "Select Backup Approver"
+          },
+          "justification": {
+            "name": "Justification",
+            "placeholder": "Justify this role asignment (min 10 characters)"
+          },
+          "roleExpirationDate": {
+            "name": "Role Expiration Date",
+            "placeholder": "MM/DD/YYYY (min today)"
+          }
+        }
+      },
+      "filter": {
+        "code": "Filter by code",
+        "organization": "Filter by organization",
+        "allOrgs": "Roles from all Organizations"
+      },
+      "options": {
+        "add": "Add Roles",
+        "del": "Delete Role"
+      },
+      "messages": {
+        "confirm": "Are you sure you want to delete this role?",
+        "delRole": "Role deleted successfully."
+      }
+    },
+    "summary": {
+      "title": "Confirmation",
+      "schedule": "Schedule Transaction",
+      "fields": {
+        "scheduleTransaction": "Schedule Transaction",
+        "scheduleDate": "Schedule Date (MM/DD/YYYY)"
+      },
+      "list": {
+        "item1": "In this section you can specify if you wish to schedule this user generation for the future or generate it immediately.",
+        "item2": "The transaction schedule should always be for a future date.",
+        "item3": "If there is already a starter transaction scheduled for this user, the system will trigger an error and invalidate this form."
+      },
+      "info": {
+        "scheduleTransaction": "Do you want to schedule this transaction for a future date?",
+        "scheduleDate": "Date on which the Leaver transaction will be executed. Min date: today."
+      }
+    },
+    "info": {
+      "main": "This form allows you to perform a starter request to sign up a new user in the company. Through this form, you also will be able to perform role assignment requests, which will be send to its roles approvers in order to decide in last resort if this role assignment is viable or not. So, you must be aware of the roles that you are trying to assign to that new user.",
+      "title": "Novices , expand the panel for further instructions",
+      "user": {
+        "item1": "In this section you must fill in all the data related to the new user.",
+        "item2": "You will find an explanation in those fields that are less common, at the info icon next to their labels. Along with some validation constrains.",
+        "item3": "In this form you can generate 3 employee types (Employee, contractor or administrator) and additional data can appear to be filled in according to the type of employee. Remember that only users with special privileges in the system can create administrators (contact the support team for more information on this topic).",
+        "item4": "There are several utilities in this form to ensure that the new user's data are correct and that there will be no duplication with existing users (username, email).",
+        "item5": "Please fill all the required values (red asterisk) before you click the \"Next Step\" button."
+      },
+      "roles": {
+        "item1": "In this section you can indicate all the roles that you want to assign to this user (remember that only roles corresponding to your organization can be assigned).",
+        "item2": "To add new roles just add a new row to the table and select the role you want to assign and the approver of that role. Clicking on the \"Role code\" field will open a drop-down menu to select the role you want to add, after selecting the role click on the \"Approver\" field and a drop-down list will be displayed to select the approver (if there is more than one).",
+        "item3": "If after selecting the approver of a role, you change again the role of the same record, make sure you click again on the field \"Approver\" for that role and then select again a correct approver value.",
+        "item4": "To delete a role added incorrectly in the table, you should just press the paper icon at the end of each row, or select several records and press the \"Delete\" button if you want to delete multiple records at once.",
+        "item5": "The system will perform additional validations when the form is submitted, so please be sure not to include duplicate roles or other incorrect data."
+      },
+      "summary": {
+        "item1": "When this form is submitted (by clicking the \"Submit\" button in the bottom rigth corner), the system will automatically create the user independently of whether the assigned roles have been approved or not.",
+        "item2": "The credentials for the new user's account activation will be sent to the e-mail address indicated in the \"Email contact\" field.",
+        "item3": "Additionally, an approval form will be sent to those responsible for the roles assigned to this user so that they can approve or deny their assignment to this user.",
+        "item4": "You will receive a notification on this form to indicate whether the process has been completed successfully or whether an error has occurred. You will also receive an email with this information.",
+        "item5": "Please note that OneLogin password invitation link expires after 24 hours."
+      },
+      "moreInfo": {
+        "message": "Whether you need more information, you could review the playbook provided in the following link:",
+        "link": "starter playbook"
+      }
+    },
+    "errors": {
+      "validations": {
+        "nameLength": {
+          "title": "Name exceeds the max length",
+          "message": "Name field can not exceed 28 characters."
+        },
+        "lastnameLength": {
+          "title": "Last name exceeds the max length",
+          "message": "Last name field can not exceed 29 characters."
+        },
+        "usernameLength": {
+          "title": "Username exceeds the max length",
+          "message": "Username field can not exceed 20 characters."
+        },
+        "emailLength": {
+          "title": "Email exceeds the max length",
+          "message": "Email field can not exceed 256 characters."
+        },
+        "emailContactLength": {
+          "title": "Email contact exceeds the max length",
+          "message": "Email contact field can not exceed 256 characters."
+        },
+        "agentCodeLength": {
+          "title": "Agent code exceeds the max length",
+          "message": "Agent code field can not exceed 20 characters."
+        },
+        "techDescriptionLength": {
+          "title": "Technical description exceeds the max length",
+          "message": "Technical description field can not exceed 256 characters."
+        },
+        "department": {
+          "title": "Department exceeds the max length",
+          "message": "Department field can not exceed 64 characters."
+        },
+        "username": {
+          "title": "Invalid username",
+          "message": "Username field can not contain the following the following strings: a.a, a.e, e.a, or e.e. It must not contain any diacritical marks either."
+        },
+        "email": {
+          "title": "Invalid email",
+          "message": "Email field can not contain any diacritical marks."
+        },
+        "emailContact": {
+          "title": "Invalid email contact",
+          "message": "Email contact field is an invalid email."
+        }
+      },
+      "service": {
+        "noManagers": {
+          "title": "No managers found.",
+          "message": "We could not retrieve the managers list."
+        },
+        "noMainAccounts": {
+          "title": "No main accounts found.",
+          "message": "We could not retrieve the main accounts list."
+        },
+        "noOwners": {
+          "title": "No owners found.",
+          "message": "We could not retrieve the owner list."
+        },
+        "noResponsibles": {
+          "title": "No responsibles found.",
+          "message": "We could not retrieve the responsibles list."
+        },
+        "noEmployeesLinked": {
+          "title": "No employees linked found.",
+          "message": "We could not retrieve the employees linked list."
+        },
+        "noOrgs": {
+          "title": "No organizations found.",
+          "message": "We could not retrieve the organizations list."
+        },
+        "noInstances": {
+          "title": "No instances found.",
+          "message": "We could not retrieve the instances list."
+        }
+      },
+      "contact": {
+        "title": "Invalid contact data",
+        "fullName": "The full name",
+        "userName": "The username",
+        "email": "The email",
+        "alreadyExists": "already exists."
+      },
+      "roles": {
+        "noApprovers": {
+          "title": "Roles without approvers",
+          "message": "Some of the selected roles has no approver list. So you can not add these roles."
+        },
+        "noRoles": {
+          "title": "No roles added",
+          "message": "In order to go on, you must add, at least, one role to the role list."
+        },
+        "selectFirst": {
+          "title": "There are no roles selected!",
+          "message": "You must select, at least, one role to be added."
+        },
+        "justification": "Please fill all the required values. You will notice them due to the red asteriks, next to their labels. Each justification must have at least 10 characters. Each entered role expiration date can not be earlier than today."
+      },
+      "summary": {
+        "sendTransaction": {
+          "title": "Transaction Failed",
+          "message": "The starter transaction could not be sent. Please try again later."
+        }
+      }
+    },
+    "success": {
+      "send": {
+        "title": "Starter submitted",
+        "message": "The starter transaction has been submitted successfully!"
+      }
+    }
+  },
+  "update": "",
+  "leaver": "",
+  "signIn": {
+    "welcome": "Welcome to",
+    "button": "Login with SSO",
+    "alerts": {
+      "logOutInfo": "User successfully logged out",
+      "authError": {
+        "title": "Authentication error",
+        "message": "Sorry, the credentials has expired. Please, log in the system again."
+      },
+      "authCallbackError": {
+        "title": "Authentication error",
+        "message": "Sorry, there was an unexpected problem during login process. Try it later."
+      }
+    }
+  },
+  "menu": {
+    "tasks": "Workflows",
+    "new": "New Transaction",
+    "starter": "Starter",
+    "profile": {
+      "profileInfo": "Profile Info",
+      "relatedAccounts": "Related Accounts",
+      "profileAlt": "Profile image",
+      "loginInfo": {
+        "title": "Login Info",
+        "lastLogin": "Last Login",
+        "passwordChangedAt": "Password Changed At",
+        "status": "Status",
+        "state": "State"
+      },
+      "table": {
+        "titles": {
+          "adminAccounts": "Admin Accounts",
+          "contractorAccounts": "Contractor Accounts",
+          "relatedAccounts": "Related Accounts",
+          "additionalAccounts": "Additional Accounts"
+        },
+        "headers": {
+          "name": "Full Name",
+          "username": "Username",
+          "email": "Email",
+          "emailContact": "Email Contact",
+          "roleIds": "Role IDs"
+        }
+      }
+    }
+  }
+}
