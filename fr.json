@@ -1,68 +1,68 @@
 {
   "common": {
-  "error": {
-    "server": {
-      "title": "Erreur du serveur",
-      "message": "Nous rencontrons actuellement des difficultés pour charger les informations. Veuillez réessayer plus tard."
+    "error": {
+      "server": {
+        "title": "Erreur du serveur",
+        "message": "Nous rencontrons actuellement des difficultés pour charger les informations. Veuillez réessayer plus tard."
+      },
+      "noData": {
+        "title": "Aucune donnée du serveur",
+        "message": "Les données récupérées depuis les serveurs sont vides. Veuillez réessayer plus tard."
+      },
+      "required": {
+        "title": "Formulaire incomplet",
+        "message": "Veuillez remplir correctement toutes les valeurs requises. Vous les reconnaîtrez grâce aux astérisques rouges à côté de leurs étiquettes."
+      }
     },
-    "noData": {
-      "title": "Aucune donnée du serveur",
-      "message": "Les données récupérées depuis les serveurs sont vides. Veuillez réessayer plus tard."
-    },
-    "required": {
-      "title": "Formulaire incomplet",
-      "message": "Veuillez remplir correctement toutes les valeurs requises. Vous les reconnaîtrez grâce aux astérisques rouges à côté de leurs étiquettes."
-    }
-  },
-  "options": {
-    "yes": "Oui",
-    "no": "Non",
-    "other": "Autre",
-    "unknown": "Inconnu"
-  },
-  "button": {
-    "next": "Suivant",
-    "prev": "Précédent",
-    "submit": "Soumettre",
-    "cancel": "Annuler",
-    "confirm": "Confirmer",
-    "yes": "Oui",
-    "no": "Non"
-  }
-},
-"home": {
-  "title": "Flux de travail",
-  "table": {
-    "empty": "Il n'y a aucun flux de travail",
     "options": {
-      "all": "Tous les flux de travail",
-      "mines": "Mes flux de travail",
-      "others": "Autres flux de travail"
+      "yes": "Oui",
+      "no": "Non",
+      "other": "Autre",
+      "unknown": "Inconnu"
     },
-    "headers": {
-      "item": "Élément",
-      "flow": "Flux",
-      "status": "Statut",
-      "dueDate": "Date d'échéance"
+    "button": {
+      "next": "Suivant",
+      "prev": "Précédent",
+      "submit": "Soumettre",
+      "cancel": "Annuler",
+      "confirm": "Confirmer",
+      "yes": "Oui",
+      "no": "Non"
     }
   },
-  "errors": {
-    "service": {
-      "noUserDetail": {
-        "title": "Données du profil utilisateur introuvables",
-        "message": "Les données de votre profil utilisateur n'ont pas été trouvées."
+  "home": {
+    "title": "Flux de travail",
+    "table": {
+      "empty": "Il n'y a aucun flux de travail",
+      "options": {
+        "all": "Tous les flux de travail",
+        "mines": "Mes flux de travail",
+        "others": "Autres flux de travail"
       },
-      "cannotLoadProfile": {
-        "title": "Profil introuvable",
-        "message": "Les données de votre profil utilisateur n'ont pas pu être chargées."
-      },
-      "cannotLoadRelAccounts": {
-        "title": "Comptes liés à l'utilisateur introuvables",
-        "message": "Les comptes liés à votre profil utilisateur n'ont pas pu être chargés."
+      "headers": {
+        "item": "Élément",
+        "flow": "Flux",
+        "status": "Statut",
+        "dueDate": "Date d'échéance"
+      }
+    },
+    "errors": {
+      "service": {
+        "noUserDetail": {
+          "title": "Données du profil utilisateur introuvables",
+          "message": "Les données de votre profil utilisateur n'ont pas été trouvées."
+        },
+        "cannotLoadProfile": {
+          "title": "Profil introuvable",
+          "message": "Les données de votre profil utilisateur n'ont pas pu être chargées."
+        },
+        "cannotLoadRelAccounts": {
+          "title": "Comptes liés à l'utilisateur introuvables",
+          "message": "Les comptes liés à votre profil utilisateur n'ont pas pu être chargés."
+        }
       }
     }
-  }
-},
+  },
   "starter": {
     "title1": "Nouvelle Transaction",
     "title2": "Démarrage",
@@ -92,7 +92,112 @@
           "payrollSystem": "L'application RH utilisée pour enregistrer la personne auprès de l'entreprise de paie.",
           "payrollID": "L'application RH utilisée pour enregistrer la personne auprès de l'entreprise de paie."
         }
-      }
+      },"contractor": {
+  "title": "Données du Prestataire",
+  "fields": {
+    "endOfMission": "Fin de Mission (JJ/MM/AAAA)",
+    "responsible": "Responsable",
+    "provider": "Fournisseur",
+    "belongToAdmiralGroup": "Appartient au Groupe Admiral ?",
+    "contractRef": "Référence du Contrat",
+    "createAdminAccount": "Créer un compte Admin ?"
+  },
+  "info": {
+    "endOfMission": "Date à laquelle le prestataire cesse de travailler pour l'entreprise. C'est la première date future où l'accès doit être suspendu. Par défaut, elle ne peut pas dépasser 6 mois à la création du compte.",
+    "responsible": "Email de l'utilisateur responsable dans l'entreprise. Ce responsable doit être un employé et avoir un compte OneLogin.",
+    "provider": "Fournisseur auquel appartient le nouveau prestataire.",
+    "belongToAdmiralGroup": "Fournisseur auquel appartient le nouveau prestataire.",
+    "createAdminAccount": "Créer un compte administrateur pour le prestataire une fois le processus terminé."
+  },
+  "workstation": {
+    "title": "Données du Poste de Travail",
+    "fields": {
+      "workstationType": "Type de poste",
+      "vdiProfile": "Profil VDI",
+      "firstVdiProfile": "Est-ce le premier VDI pour le profil de l’employé ?",
+      "vdiAdditionalSoftware": "Avez-vous besoin de logiciels ou de connexions supplémentaires ?",
+      "vdiSoftwareRequested": "Veuillez décrire les logiciels, connexions ou autres besoins supplémentaires"
+    },
+    "info": {
+      "workstationType": "Complétez cette section pour finaliser les données du poste pour le prestataire.",
+      "vdiProfile": "Profil VDI requis pour le nouvel utilisateur.",
+      "firstVdiProfile": "Sélectionnez si ce profil VDI est le premier ou s’il en existe déjà un similaire.",
+      "vdiAdditionalSoftware": "Sélectionnez si l'utilisateur a besoin de logiciels ou de connexions supplémentaires.",
+      "vdiSoftwareRequested": "Indiquez ici les logiciels ou autres besoins nécessaires pour le VDI."
+    }
+  }
+},
+"administrator": {
+  "title": "Données de l’Administrateur",
+  "fields": {
+    "employeeLinked": "Employé lié au compte admin"
+  },
+  "info": {
+    "employeeLinked": "Email du compte utilisateur employé lié à un compte administrateur."
+  }
+},
+"addAccount": {
+  "title": "Données du Compte Supplémentaire",
+  "fields": {
+    "mainAccount": "Compte Principal",
+    "additionalAccountEmailInbox": "Boîte Email"
+  },
+  "info": {
+    "mainAccount": "Email du compte principal lié à un compte supplémentaire.",
+    "additionalAccountEmailInbox": "Demande de création d'une boîte mail pour le compte supplémentaire"
+  }
+},
+"serviceAccount": {
+  "title": "Données du Compte de Service",
+  "fields": {
+    "owner": "Propriétaire",
+    "backupOwner": "Propriétaire de secours",
+    "instance": "Instance",
+    "department": "Département",
+    "endOfMission": "Fin de Mission (JJ/MM/AAAA)",
+    "endOfMissionDisplay": "Fin de Mission",
+    "description": "Description technique"
+  },
+  "info": {
+    "owner": "Email de l'employé qui sera propriétaire du compte de service à créer",
+    "backupOwner": "Email de l'employé qui sera propriétaire de secours du compte de service",
+    "instance": "Nom de l'instance pour le compte de service",
+    "department": "Département où le compte de service sera utilisé. Max 64 caractères.",
+    "endOfMission": "Date de fin d’utilisation du compte de service",
+    "description": "Description technique du compte de service. Max 256 caractères."
+  },
+  "instance": {
+    "name": "Nom de l’instance",
+    "description": "Description de l’instance"
+  }
+},
+"contact": {
+  "title": "Informations de Contact",
+  "fields": {
+    "name": "Nom",
+    "lastName": "Nom de famille",
+    "userName": "Nom d'utilisateur",
+    "email": "Email",
+    "emailContact": "Email de contact",
+    "gsuiteConfig": "Configuration Gsuite",
+    "gmailUserGroup": "Groupe Gmail",
+    "additionalInfo": "Informations supplémentaires"
+  },
+  "info": {
+    "name": "Max 28 caractères.",
+    "lastName": "Max 29 caractères.",
+    "userName": "Règle : prénom.nom, max 20 caractères. Ne doit pas contenir : a.a, a.e, e.a ou e.e.",
+    "email": "Règle : prénom.nom, max 256 caractères.",
+    "gmailUserGroup": "Groupes Gmail auxquels l'utilisateur appartiendra.",
+    "emailContact": "Email auquel seront envoyées les identifiants OneLogin. Peut être personnel ou celui du responsable. Max 256 caractères.",
+    "additionalInfo": "Champ texte pour ajouter des informations supplémentaires. Elles seront ajoutées au ticket d’arrivée dans FreshDesk."
+  }
+},
+"ct": {
+  "title": "Données de l’Agent",
+  "agentCode": "Code Agent",
+  "agentCodeInfo": "Ce champ contient le code de l'agent. Il peut être saisi ou mis à jour plus tard via le formulaire UpdateUser. Max 20 caractères."
+}
     },
     "roles": {
       "title": "Rôles",
