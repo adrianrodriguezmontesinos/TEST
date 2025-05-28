@@ -92,7 +92,113 @@
           "payrollSystem": "L’applicazione HR utilizzata per registrare la persona presso l’azienda pagante.",
           "payrollID": "L’applicazione HR utilizzata per registrare la persona presso l’azienda pagante."
         }
-      }
+      }, "contractor": {
+  "title": "Dati del Collaboratore",
+  "fields": {
+    "endOfMission": "Fine della Missione (GG/MM/AAAA)",
+    "responsible": "Responsabile",
+    "provider": "Fornitore",
+    "belongToAdmiralGroup": "Appartiene al Gruppo Admiral?",
+    "contractRef": "Riferimento Contratto",
+    "createAdminAccount": "Creare un Account Admin?"
+  },
+  "info": {
+    "endOfMission": "Giorno in cui termina la collaborazione del contractor con l'azienda. Da questa data l'accesso sarà sospeso. Per impostazione predefinita, non può superare i 6 mesi dalla creazione dell’account.",
+    "responsible": "Email dell’utente responsabile all’interno dell’azienda. Deve essere un dipendente e avere un account OneLogin.",
+    "provider": "Fornitore a cui appartiene il nuovo collaboratore.",
+    "belongToAdmiralGroup": "Fornitore a cui appartiene il nuovo collaboratore.",
+    "createAdminAccount": "Crea un account admin per il collaboratore alla fine del processo Starter."
+  },
+  "workstation": {
+    "title": "Dati della Postazione",
+    "fields": {
+      "workstationType": "Tipo di postazione",
+      "vdiProfile": "Profilo VDI",
+      "firstVdiProfile": "È il primo VDI per il profilo dell'impiegato?",
+      "vdiAdditionalSoftware": "Hai bisogno di software o visibilità di rete aggiuntivi?",
+      "vdiSoftwareRequested": "Descrivi eventuali software, visibilità di rete o altre esigenze"
+    },
+    "info": {
+      "workstationType": "Compila questa sezione per completare i dati della postazione del collaboratore.",
+      "vdiProfile": "Il profilo VDI richiesto per il nuovo utente.",
+      "firstVdiProfile": "Indica se questo è il primo profilo VDI o se ce ne sono altri simili.",
+      "vdiAdditionalSoftware": "Indica se sono richiesti software o visibilità di rete aggiuntive.",
+      "vdiSoftwareRequested": "Descrivi i software necessari o altri requisiti per il VDI."
+    }
+  }
+},
+"administrator": {
+  "title": "Dati dell'Amministratore",
+  "fields": {
+    "employeeLinked": "Dipendente collegato all'account admin"
+  },
+  "info": {
+    "employeeLinked": "Email del dipendente collegato a un account amministratore."
+  }
+},
+"addAccount": {
+  "title": "Dati Account Aggiuntivo",
+  "fields": {
+    "mainAccount": "Account Principale",
+    "additionalAccountEmailInbox": "Casella di Posta"
+  },
+  "info": {
+    "mainAccount": "Email dell'account principale collegato all’account aggiuntivo.",
+    "additionalAccountEmailInbox": "Richiedi la creazione di una casella di posta per l'account aggiuntivo"
+  }
+},
+"serviceAccount": {
+  "title": "Dati dell'Account di Servizio",
+  "fields": {
+    "owner": "Proprietario",
+    "backupOwner": "Proprietario di Riserva",
+    "instance": "Istanza",
+    "department": "Dipartimento",
+    "endOfMission": "Fine della Missione (GG/MM/AAAA)",
+    "endOfMissionDisplay": "Fine della Missione",
+    "description": "Descrizione tecnica"
+  },
+  "info": {
+    "owner": "Email del dipendente che sarà il proprietario dell’account di servizio.",
+    "backupOwner": "Email del dipendente che sarà il proprietario di riserva.",
+    "instance": "Nome dell’istanza per l’account di servizio.",
+    "department": "Dipartimento in cui verrà utilizzato l’account. Max 64 caratteri.",
+    "endOfMission": "Data in cui termina l’utilizzo dell’account di servizio.",
+    "description": "Descrizione tecnica dell’account. Max 256 caratteri."
+  },
+  "instance": {
+    "name": "Nome dell’istanza",
+    "description": "Descrizione dell’istanza"
+  }
+},
+"contact": {
+  "title": "Informazioni di Contatto",
+  "fields": {
+    "name": "Nome",
+    "lastName": "Cognome",
+    "userName": "Nome utente",
+    "email": "Email",
+    "emailContact": "Email di Contatto",
+    "gsuiteConfig": "Configurazione Gsuite",
+    "gmailUserGroup": "Gruppo Gmail",
+    "additionalInfo": "Informazioni Aggiuntive"
+  },
+  "info": {
+    "name": "Max 28 caratteri.",
+    "lastName": "Max 29 caratteri.",
+    "userName": "Regola: nome.cognome, max 20 caratteri. Non può contenere: a.a, a.e, e.a, o e.e",
+    "email": "Regola: nome.cognome, max 256 caratteri.",
+    "gmailUserGroup": "Gruppi Gmail a cui l’utente apparterrà.",
+    "emailContact": "Email a cui verranno inviati i dati OneLogin. Può essere personale o del responsabile. Max 256 caratteri.",
+    "additionalInfo": "Campo testuale per fornire ulteriori informazioni sull’utente. Saranno incluse nel ticket di arrivo in FreshDesk."
+  }
+},
+"ct": {
+  "title": "Dati dell’Agente",
+  "agentCode": "Codice Agente",
+  "agentCodeInfo": "Questo campo contiene il codice dell’agente. Può essere compilato o aggiornato più tardi tramite il modulo UpdateUser. Max 20 caratteri."
+}
+
     },
     "roles": {
       "title": "Ruoli",
